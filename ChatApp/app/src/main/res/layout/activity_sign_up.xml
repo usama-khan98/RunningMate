@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#000000"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="S I G N    U P"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp"
+        >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <!--    <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_height="90dp"
+                    android:layout_width="90dp"
+                    android:background="@drawable/imagebox"
+                    android:id="@+id/edit_image"
+                    android:scaleType="fitCenter"
+                    />
+                <ImageView
+                    android:id="@+id/choose_image"
+                    android:src="@drawable/add_vector"
+                    android:background="@drawable/select_image_btn"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_below="@id/edit_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+-->
+
+            <ImageButton
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:background="@drawable/imagebox"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/avatar"
+                android:id="@+id/pickImage"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/imgError"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#D10000"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name Here"
+                android:drawableLeft="@drawable/name_vector"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:inputType="textPersonName"
+                android:id="@+id/signUp_Name"
+                android:fontFamily="sans-serif-light"
+                android:background="@drawable/text_field_border"
+                />
+
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Here"
+                android:drawableLeft="@drawable/email_vector"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/signUp_Email"
+                android:fontFamily="sans-serif-light"
+                android:background="@drawable/text_field_border"
+                />
+            <EditText
+                android:id="@+id/signUp_Password"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password Here"
+                android:drawableLeft="@drawable/password_vector"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif-light"
+                android:background="@drawable/text_field_border"
+                />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age Here"
+                android:drawableLeft="@drawable/age_vector"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:inputType="number"
+                android:id="@+id/signUp_Age"
+                android:fontFamily="sans-serif-light"
+                android:background="@drawable/text_field_border"
+                />
+            <RadioGroup
+
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdM"
+                    android:text="Male"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:buttonTint="#000000"
+                    />
+                <RadioButton
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdF"
+                    android:text="Female"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:buttonTint="#000000"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/gndrError"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#D10000"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/signUp_Button"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/button_style"
+                />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already Registered ? "
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#C9000000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/signin_tv"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

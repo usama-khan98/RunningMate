@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="0dp">
+    <androidx.cardview.widget.CardView
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/title_vector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getPostTitle"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/location_vector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getPostLocation"
+                />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/gender_vector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getPostGender"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/age_vector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getPostAge"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/time_vector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getPostTime"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

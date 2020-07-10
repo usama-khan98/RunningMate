@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="A D D  N E W  P O S T"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp"
+        >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:drawableLeft="@drawable/title_vector"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:inputType="textPersonName"
+                    android:id="@+id/post_title"
+                    android:fontFamily="sans-serif-light"
+                    android:background="@drawable/text_field_border"
+                    />
+
+                <AutoCompleteTextView
+                    android:fontFamily="sans-serif-light"
+                    android:background="@drawable/text_field_border"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/search_vector"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:inputType="textPersonName"
+                    android:id="@+id/auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="Location" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+                <RadioGroup
+     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rdMale"
+                        android:text="Male"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:buttonTint="#000000"
+                        />
+                    <RadioButton
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rdFemale"
+                        android:text="Female"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:buttonTint="#000000"
+                        />
+                </RadioGroup>
+
+
+                <Spinner
+                    android:id="@+id/agePref"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:id="@+id/addPost_btn"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A D D  P O S T"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_style"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
